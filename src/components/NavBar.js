@@ -1,5 +1,42 @@
 import React from 'react';
+import { FaBars, FaCartPlus } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+import { PageConsumer } from '../context/Context';
+
+const NavWrapper = styled.nav`
+	position: sticky;
+	top: 0px;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 30px;
+	align-items: center;
+	height: 66px;
+	border-bottom: 3px solid wheat;
+	background: whitesmoke;
+	font-size: 24px;
+	.nav-icon {
+		cursor: pointer;
+	}
+`;
 
 export default function NavBar() {
-	return <div>hello from navbar</div>;
+	// console.log(window.location.origin + '/static_images/logo.svg');
+	return (
+		<PageConsumer>
+			{(value) => {
+				console.log(value);
+				// const { handleSideCarToggleOn, handleSideNavToggleOn } = value;
+				return (
+					<NavWrapper>
+						<FaBars className="nav-icon" />
+						<Link to="/">
+							<img src={window.location.origin + '/static_images/logo.svg'} alt="logo" />
+						</Link>
+						<FaCartPlus className="nav-icon" />
+					</NavWrapper>
+				);
+			}}
+		</PageConsumer>
+	);
 }
