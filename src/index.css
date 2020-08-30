@@ -31,3 +31,16 @@ code {
 .cart-icon {
 	cursor: pointer;
 }
+
+.services {
+	background: cadetblue;
+	display: flex;
+	padding: 40px 35px;
+
+	text-align: center;
+	justify-content: center;
+}
+
+/* .services div {
+	padding: 0 40px;
+} */
