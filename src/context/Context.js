@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
+import { linkData } from './linkData';
 
 const PageContext = React.createContext();
 
 class Context extends Component {
 	state = {
 		sideCar: false,
-		sideNav: false
+		sideNav: false,
+		links: linkData
 	};
 
 	handleSideNavToggleOn = () => {

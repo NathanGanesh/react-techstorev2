@@ -15,6 +15,7 @@ const NavWrapper = styled.nav`
 	border-bottom: 3px solid wheat;
 	background: whitesmoke;
 	font-size: 24px;
+	z-index: 100;
 	.nav-icon {
 		cursor: pointer;
 	}
@@ -25,15 +26,14 @@ export default function NavBar() {
 	return (
 		<PageConsumer>
 			{(value) => {
-				console.log(value);
-				// const { handleSideCarToggleOn, handleSideNavToggleOn } = value;
+				const { handleSideCarToggleOn, handleSideNavToggleOn } = value;
 				return (
 					<NavWrapper>
-						<FaBars className="nav-icon" />
+						<FaBars className="nav-icon" onClick={handleSideNavToggleOn} />
 						<Link to="/">
 							<img src={window.location.origin + '/static_images/logo.svg'} alt="logo" />
 						</Link>
-						<FaCartPlus className="nav-icon" />
+						<FaCartPlus className="nav-icon" onClick={handleSideCarToggleOn} />
 					</NavWrapper>
 				);
 			}}
