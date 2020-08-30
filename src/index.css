@@ -12,21 +12,21 @@ code {
 
 .main-link {
 	padding: 0.5rem 1rem;
-	background: var(--primaryColor);
-	color: var(--mainWhite);
+	background: #5fb7ea;
+	color: #fff;
 	display: inline-block;
 	text-transform: uppercase;
-	letter-spacing: var(--mainSpacing);
-	outline: 2px solid var(--primaryColor);
+	letter-spacing: 0.3rem;
+	outline: 2px solid #5fb7ea;
 	outline-offset: 4px;
 	border: none;
-	transition: var(--mainTransition);
+	transition: all 0.3s ease-in-out;
 }
 .main-link:hover {
-	background: var(--darkGrey);
+	background: #5f5e5e;
 	text-decoration: none;
-	color: var(--primaryColor);
-	outline-color: var(--darkGrey);
+	color: #5fb7ea;
+	outline-color: #5f5e5e;
 }
 .cart-icon {
 	cursor: pointer;
