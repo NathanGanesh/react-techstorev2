@@ -42,9 +42,17 @@ export default function Services() {
 }
 
 const ServicesWrapper = styled.section`
+	.services {
+		background: cadetblue;
+		display: flex;
+		padding: 20px 35px;
+
+		text-align: center;
+		justify-content: center;
+	}
 	.service-icon {
 		font-size: 2.5rem;
-		/* margin-top: 30px; */
+		/* padding-top: 30px; */
 		color: black;
 	}
 	h6 {
