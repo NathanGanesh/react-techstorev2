@@ -31,3 +31,61 @@ code {
 .cart-icon {
 	cursor: pointer;
 }
+
+.featured-flex {
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	padding-bottom: 30px;
+	padding-top: 25px;
+	font-size: 1.5rem;
+}
+
+.featured-items {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	justify-content: center;
+	text-align: center;
+	padding: 10px;
+	margin: auto;
+}
+
+.about-us {
+	display: flex;
+	padding: 20px;
+}
+.form-spree {
+	display: flex;
+	flex-direction: column;
+
+	text-align: center;
+	margin: auto;
+	padding: 25px;
+}
+.form-spree input {
+	width: 350px;
+	height: 20px;
+	padding: 5px;
+}
+
+.form-spree textarea {
+	width: 350px;
+	padding: 5px;
+}
+
+.form-spree button {
+	width: 350px;
+	margin: auto;
+	padding: 5px;
+}
+
+.input {
+	padding-bottom: 20px;
+}
+.btn-send {
+	margin-bottom: 20px;
+	padding-top: 5px;
+}
+.footer-icon {
+	font-size: 24px;
+}

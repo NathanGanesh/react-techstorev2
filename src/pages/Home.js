@@ -14,6 +14,19 @@ export default function Home() {
 			</Hero>
 			<Services />
 			<Featured />
+			<Link
+				to="/products"
+				className="main-link"
+				style={{
+					justifyContent: 'center',
+					display: 'flex',
+					margin: 'auto',
+					width: '250px',
+					marginBottom: '25px'
+				}}
+			>
+				our products
+			</Link>
 		</div>
 	);
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 export default function Hero({ img, title, max, children }) {
+	console.log(max);
 	return (
 		<HeroWrapper max={max} img={img}>
 			<div className="banner">

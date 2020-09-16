@@ -7,13 +7,14 @@ export default function Featured() {
 		<PageConsumer>
 			{(value) => {
 				const { featuredProducts } = value;
-
 				return (
-					<div>
-						{featuredProducts.map((item, index) => {
-							const { title, price, image } = item.fields;
-							return <SingleProduct title={title} price={price} image={image} />;
-						})}
+					<div className="featured-flex">
+						<h1>Featured Products</h1>
+						<div className="featured-items">
+							{featuredProducts.map((item) => {
+								return <SingleProduct key={item.sys.id} product={item.fields} />;
+							})}
+						</div>
 					</div>
 				);
 			}}
