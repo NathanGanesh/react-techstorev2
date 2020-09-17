@@ -46,7 +46,7 @@ export default function ProductFilter() {
 									})}
 								</select>
 							</div>
-							<div>
+							<div className="">
 								<label htmlFor="price">
 									<p className="mb-2">
 										product price : <span>$ {price}</span>
@@ -84,13 +84,18 @@ export default function ProductFilter() {
 }
 
 const FilterWrapper = styled.div`
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-column-gap: 2rem;
+	grid-row-gap: 1rem;
 	label {
 		font-weight: bold;
 		text-transform: capitalize;
 	}
-	.filter-wrapper {
+	.filter-wrapper,
+	.filter-price {
 		display: grid;
-		/* flex-direction: column; */
+
 		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 		grid-column-gap: 2rem;
 		grid-row-gap: 1rem;

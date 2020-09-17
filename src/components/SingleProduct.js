@@ -9,7 +9,8 @@ export default function SingleProduct({ product }) {
 		<PageConsumer>
 			{(value) => {
 				const { addProductToCart, setSingleProduct } = value;
-				// console.log(value);
+
+				// console.log(product);
 				return (
 					<ProductWrapper>
 						<div className="single-product-img">

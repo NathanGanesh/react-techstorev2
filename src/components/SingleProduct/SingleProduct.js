@@ -27,13 +27,13 @@ export default function SingleProduct() {
 									<p>{description}</p>
 								</div>
 								<div>
-									<Link
-										to="/product"
+									<button
+										onClick={() => addProductToCart(title)}
 										className="main-link"
 										style={{ marginBottom: '25px', marginTop: '25px' }}
 									>
 										Add to cart
-									</Link>
+									</button>
 								</div>
 								<div>
 									<Link to="/products" className="main-link" style={{ marginBottom: '25px' }}>
@@ -53,5 +53,6 @@ const ProductWrapper = styled.div`
 	.single-product {
 		display: flex;
 		flex-direction: row;
+		padding: 20px;
 	}
 `;
